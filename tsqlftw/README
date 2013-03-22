@@ -1,0 +1,30 @@
+TSQLFTW - T-SQL For The WIN(dows) - by Fosco Marotto (gfosco@gmail.com)
+
+Work in Progress... Currently supports Connect / Query / Close.
+
+This is the package for the C++/.NET Node Module.  The Debug folder holds the current working output, and a working example resides in the /example folder.
+
+usage example:
+
+var db = require('./tsqlftw').tsqlftw;
+var mssql = new db();
+
+mssql.connect('server=localhost\\sqlexpress;Trusted_Connection=yes;database=MyDB;', function (err, data) {
+    mssql.query('select * from myTable', function (err, results) {
+	    console.log(err);
+		console.log(results);
+		results = JSON.parse(results);
+		console.log(results.count);
+		// result set is in results.rows and has a row number.
+		mssql.close(function (err, results) {
+		       console.log('Connection closed.');
+		});
+    });
+});
+
+
+
+Credits: 
+* saary - node.net module example. https://github.com/saary/node.net
+* James Newton-King - JSON parser for .NET. http://james.newtonking.com/pages/json-net.aspx
+
