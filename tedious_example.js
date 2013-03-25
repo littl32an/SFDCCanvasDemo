@@ -1,8 +1,8 @@
-var Connection = require('tedious').Connection;
+var Connection = require('../lib/tedious').Connection;
 
 var config = {
-	userName: 'test',
-	password: 'test',
+	userName: 'STAT\tdo',
+	password: 'Jdmwh0re2',
 	server: '192.168.1.210',
 };
 
@@ -15,7 +15,7 @@ connection.on('connect',
 	}
 );
 
-var Request = require('tedious').Request;
+var Request = require('../lib/tedious').Request;
 
 function executeStatement() {
 	request = new Request ("select 42, 'hello world'", 
@@ -39,4 +39,4 @@ function executeStatement() {
 	);
 	
 	connection.execSql(request);
-};
+	};
