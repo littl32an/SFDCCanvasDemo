@@ -1,1 +1,9 @@
-﻿
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Demo" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DENORALT772;Initial Catalog=Demo;Integrated Security=True" SettingsObjectName="C_Sharp_Canvas_Demo.Properties.Settings" SettingsPropertyName="DemoConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Table_2" Member="Table_2s">
+    <Type Name="Table_2">
+      <Column Name="Name" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Title" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </Type>
+  </Table>
+</Database>

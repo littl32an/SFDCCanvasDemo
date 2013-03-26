@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Collections.Generic;
+
 using System.Data.SqlClient;
 
 namespace C_Sharp_Canvas_Demo
@@ -30,6 +30,26 @@ namespace C_Sharp_Canvas_Demo
         public override string ToString()
         {
             return string.Format("Name: {0}, Title: {1}", Name, Title);
+
+           /// List<Employee> employees = new List<Employee>();
+
+            //string n;
+            //string t;
+            /*
+            var g = from a in db.GetTable<Table_2>() select new 
+            {
+                n = a.Name,
+                t = a.Title
+            };
+
+            employees.Add(new Employee() {Name = n, Title = t });
+
+            foreach (Employee emp in employees)
+            {
+                Console.WriteLine(emp + "\n\n");
+            }*/
+
+           // Console.ReadKey();
         }
     }
 }
