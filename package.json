@@ -1,0 +1,11 @@
+{
+  "name": "SFDCCanvasDemo",
+  "version": "0.0.0",
+  "description": "Node support for the SF Canvas Demo",
+  "private": true,
+  "dependencies": {
+    "tedious": "~0.1.3"
+  },
+  "devDependencies": {},
+  "readmeFilename": "README.md"
+}
