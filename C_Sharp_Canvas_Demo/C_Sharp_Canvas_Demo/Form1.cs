@@ -16,7 +16,8 @@ namespace C_Sharp_Canvas_Demo
             InitializeComponent();
 
             DataClasses1DataContext db = new DataClasses1DataContext();
-            List<Employee> employees = new List<Employee>();
         }
+
+
     }
 }
